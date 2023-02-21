@@ -22,7 +22,7 @@ With the repository created in your GitHub account, clone the project to your lo
 Using publish profile as deployment credential is recommended if you are not the owner of your Azure subscription. Follow these steps to configure your workflow to use the publish profile from your function app.
 
 1. In Azure portal, go to your function app.
-2. Click Get publish profile and download .PublishSettings file.
+2. Click Get publish profile and download .PublishSettings file. (updated)
 3. Open the .PublishSettings file and copy the content.
 4. Paste the XML content to your GitHub Repository > Settings > Secrets > Add a new secret > AZURE_FUNCTIONAPP_PUBLISH_PROFILE
 5. Use one of the above workflow templates as a reference to build your workflow in .github/workflows/ directory.
