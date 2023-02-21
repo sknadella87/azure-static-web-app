@@ -1,4 +1,4 @@
-# azure-static-web-app (Terraform code DOES NOT work for USGOVcloud)
+# azure-static-web-app (Terraform code DOES NOT work for USGOV cloud)
 Deploy website to Azure Static Web App
 
 ---
