@@ -29,7 +29,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: self-hosted # For Linux, use ubuntu-latest
+    runs-on: self-hosted
     environment: dev
     steps:
     - name: 'Checkout GitHub Action'
