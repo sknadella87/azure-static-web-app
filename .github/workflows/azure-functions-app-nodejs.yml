@@ -29,8 +29,9 @@ env:
 
 jobs:
   build-and-deploy:
+    name: 'Node Build'
     runs-on: self-hosted
-    environment: dev
+
     steps:
     - name: 'Checkout GitHub Action'
       uses: actions/checkout@v3
