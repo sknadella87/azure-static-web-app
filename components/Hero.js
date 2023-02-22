@@ -2,14 +2,14 @@ import TextBlock from '../components/TextBlock'
 import FileAlerts from '../components/FileAlerts'
 import Button from '../components/Button'
 import Image from 'next/image'
-const Hero= ({title}) => {
+const Hero= ({title, children}) => {
   const isResourcePage =
   typeof window === 'undefined' ||
   window.location.pathname === '/'
     return (
       <div className="shadow-lg">
           <div className="flex max-w-screen-lg m-auto py-[80px]">  <div>
-        <TextBlock title="Intake Process"/>
+        <TextBlock title= {title}>{children}</TextBlock>
         {isResourcePage && 
         <Button><Image
           data-cy="VG upload logo"

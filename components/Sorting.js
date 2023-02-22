@@ -78,11 +78,12 @@ const Sorting = ({ order, setOrder }) => {
         {open && (
             <div className="w-64 absolute right-0 bg-white">
                 {filters.map(({ filter, filterKey, options })=>(
-                    <div>
+                    <div key={filterKey}>
                         <h3 className="text-base leading-6 p-[8px] mt-2">{filter}</h3>
                         <div className=" ">
                             {options.map(({ label, value }) => (
                                 <div
+                                    key={label}
                                     className="flex p-[8px] border-b-2  "
                                     onClick={() => orderBy(filterKey, value)}>
                                     {label}

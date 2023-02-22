@@ -6,6 +6,10 @@ import classNames from 'classnames';
 
 const Nav = () =>{
     const { route } = useRouter();
+    const routes = {
+      resource: ['/resource'],
+      intake: ['/', '/details']
+    };
     console.log({route}, route === '/')
 
     return(
@@ -14,7 +18,7 @@ const Nav = () =>{
 
         <Image
           data-cy="VG logo"
-          onClick={() => Router.push('/')}
+          onClick={() => Router.push('/resource')}
           src={'../../icons/logo.svg'}
           alt="VG Logo"
           width={200}
@@ -23,10 +27,9 @@ const Nav = () =>{
         />
   
       <div className="text-black-primary space-between flex">
-            <NavLink href="/resource" isActive={route === '/resource'}>Resource Hub</NavLink>
-            <NavLink href="/" isActive={route === '/'}>Intake Process</NavLink>
+        <NavLink href="/resource" isActive={routes.resource.includes(route)}>Resource Hub</NavLink>
+        <NavLink href="/" isActive={routes.intake.includes(route)}>Intake Process</NavLink>
     </div>
-
         </nav>
         </header>
     );

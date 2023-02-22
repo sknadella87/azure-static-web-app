@@ -5,7 +5,7 @@ import Tag from '../components/Tag'
 import SecondaryButton from '../components/SecondaryButton'
 
 const Field = (content, index) => [
-    <Link className="underline text-purple-primary" href={'./'}>{content}</Link>,
+    <Link className="underline text-purple-primary" href={'./details'}>{content}</Link>,
     <Tag status={content} />
 ][index] || content;
 
@@ -57,12 +57,12 @@ const Table = ({
             <table className="w-full border-collapse text-sm">
                 <thead className="border-b-purple-primary border-b-2">
                     <tr>
-                        {columns.map(head=><th className="text-left p-3">{head.header}</th>)}
+                        {columns.map(head=><th key={head.header} className="text-left p-3">{head.header}</th>)}
                     </tr>
                 </thead>
                 <tbody>
-                    {slice(filteredData, viewAll).map(row => <tr>
-                        {columns.map((col, index)=><td className="text-left p-3">
+                    {slice(filteredData, viewAll).map((row,index)=> <tr key={index}>
+                        {columns.map((col, index)=><td key={col.field} className="text-left p-3">
                             {Field(row[col.field], index)}
                         </td>
                         )}

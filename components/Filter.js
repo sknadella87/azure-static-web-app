@@ -33,11 +33,11 @@ const Filter= ({ filter, setFilter }) => {
         {open && (
             <div className="w-64 absolute bg-white right-0">
                 {filters.map(({ filter, options })=>(
-                    <div>
+                    <div key={filter}>
                         <h3 className="text-base leading-6">{filter}</h3>
                         <div className="">
                             {options.map(option => (
-                                <div className="flex" onClick={() => filterBy(filter, option)}>
+                                <div className="flex" key={option} onClick={() => filterBy(filter, option)}>
                                     {option}
                                     {option === filter && (
                                          <Image

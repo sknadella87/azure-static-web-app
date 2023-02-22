@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Mulish Regular';
+  src: url('../public/fonts/Mulish/static/Mulish-Black.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JosefinSans Light';
+  src: url('../public/fonts/Josefin_Sans/static/JosefinSans-Light.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@layer base {
+  
+  .josefinSansRegular {
+     font-family:'JosefinSans Light', sans-serif;
+  }
+  .mulishRegular {
+    font-family:'Mulish Regular', sans-serif;
+ }
+
+h1{
+  font-weight:700;
+  font-size:2.625rem;
+  line-height: 48px;
+  /* font-family:"JosefinSans Light"; */
+}
+h2{
+  font-weight:400;
+  font-size:2rem;
+  line-height: 40px;
+}
+h3{
+  font-weight:700;
+  font-size:1.5rem;
+  line-height: 32px;
+}
+
+p{
+  font-weight:400;
+  font-size:1rem;
+  line-height: 24px;
+}
+
+tr:nth-child(even){
+  background: rgba(120, 92, 148, 0.1);
+}
+tr:nth-child(even){
+  background: rgba(120, 92, 148, 0.1);
+}
+.thin-border{
+  border:1px solid #785C94;
+}
+}

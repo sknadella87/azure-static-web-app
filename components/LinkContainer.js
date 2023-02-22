@@ -2,8 +2,8 @@
 import Link from 'next/link'
 const LinkContainer = ({subtitle,title,content,link}) =>{
     return(
-        <div className="w-1/2">
-            <div className="thin-border"></div>
+        <div className="w-5/6">
+            <div className="thin-border mt-4"></div>
           <h5 className="pt-2">{subtitle}</h5>
        
             <h3 className="py-2">{title}</h3>

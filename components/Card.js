@@ -6,7 +6,7 @@ const Card = ({ children, title, subtitle, className }) => (
      <h3 className="capitalize title text-left text-xl font-bold mb-8"> {title}</h3>
      <h4>{subtitle}</h4>
       <p className="flex flex-col">{children}</p>
-      <SecondaryButton children="Download Guide" className="ml-auto mt-auto" />
+      <SecondaryButton className="ml-auto mt-auto">Download guide</SecondaryButton>
    </div>   
 )
 

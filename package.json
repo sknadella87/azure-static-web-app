@@ -4,20 +4,25 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@next/font": "13.1.6",
     "classnames": "^2.3.2",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "mongoose": "^6.9.2",
     "next": "13.1.6",
+    "pretty-checkbox": "^3.0.3",
+    "pretty-checkbox-react": "^3.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router": "^6.8.1",
-    "react-search-autocomplete": "^8.3.1"
+    "react-search-autocomplete": "^8.3.1",
+    "react-use-file-upload": "^0.9.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// }
 
-// module.exports = nextConfig
-module.exports={
-  TrailingSlash:true,
-  exportPathMap: function(){
-    return{
-      '/':{page:'/'}
-    };
-  }
-};
+const nextConfig = {
+  reactStrictMode: false,
+  swcMinify: true,
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  output: 'standalone',
+}
+
+module.exports = nextConfig

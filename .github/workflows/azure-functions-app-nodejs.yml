@@ -29,7 +29,6 @@ env:
 
 jobs:
   build-and-deploy:
-    name: 'Node Build'
     runs-on: self-hosted
 
     steps:
